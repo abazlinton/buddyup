@@ -15,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CohortTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CohortTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CohortTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="331">
@@ -51,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cohort.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Cohort.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/Cohort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="50" column="36" lean-forward="true" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+            <state relative-caret-position="390">
+              <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -399,9 +399,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CohortTest_canGetPairsOfStudents - 2018.08.20 at 18h 24m 22s.xml">
-      <configuration name="CohortTest.canGetPairsOfStudents" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CohortTest_canGetPairsOfStudents - 2018.08.20 at 18h 24m 36s.xml">
       <configuration name="CohortTest.canGetPairsOfStudents" configurationId="JUnit" />
     </history-entry>
@@ -429,6 +426,9 @@
     <history-entry file="CohortTest_canGetPairsOfStudents - 2018.08.20 at 18h 38m 11s.xml">
       <configuration name="CohortTest.canGetPairsOfStudents" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CohortTest_canGetPairsOfStudents - 2018.08.20 at 19h 04m 01s.xml">
+      <configuration name="CohortTest.canGetPairsOfStudents" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="41" y="23" width="1639" height="1027" extended-state="0" />
@@ -442,12 +442,12 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32948583" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32948583" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2495424" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2495424" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
@@ -552,17 +552,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Cohort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="50" column="36" lean-forward="true" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CohortTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
           <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Cohort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
         </state>
       </provider>
     </entry>
