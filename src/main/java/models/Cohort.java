@@ -47,7 +47,7 @@ public class Cohort {
         int timesToLoop = this.students.size() / 2;
         for (int i = 0; i < timesToLoop; i++) {
             pairs.add(new Pairing(getPair()));
-            this.students.remove(1);
+            this.students.remove(0);
             this.students.remove(0);
         }
         return pairs;
