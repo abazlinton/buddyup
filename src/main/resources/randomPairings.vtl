@@ -2,6 +2,6 @@
 
 #foreach ($pairing in $pairings)
 
-    <h3>$pairing.getStudents().get(0).getName() + $pairing.getStudents().get(1).getName()</h3>
+ <p>Group $velocityCount: $pairing.getFirstStudentName(), $pairing.getSecondStudentName()</p>
 
 #end

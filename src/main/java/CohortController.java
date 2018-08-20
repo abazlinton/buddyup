@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 import static spark.Spark.get;
+import static spark.Spark.staticFileLocation;
 
 
 public class CohortController {
@@ -21,27 +22,30 @@ public class CohortController {
         VelocityTemplateEngine vte = new VelocityTemplateEngine();
         CohortController.makeCohort();
 
-
+        staticFileLocation("/public");
 
         get("/random", (req, res) -> {
             String studentName = cohort.getRandomStudent().getName();
             Map<String, Object> model = new HashMap<>();
             model.put("studentName", studentName);
-            return new ModelAndView(model, "randomStudent.vtl");
+            model.put("template", "randomStudent.vtl");
+            return new ModelAndView(model, "layout.vtl");
         }, vte);
 
         get("/pair", (req, res) -> {
             List<Student> students = cohort.getPair();
             Map<String, Object> model = new HashMap<>();
             model.put("students", students);
-            return new ModelAndView(model, "randomPair.vtl");
+            model.put("template", "randomPair.vtl");
+            return new ModelAndView(model, "layout.vtl");
         }, vte);
 
         get("/pairs", (req, res) -> {
             List<Pairing> pairings = cohort.getPairs();
             Map<String, Object> model = new HashMap<>();
             model.put("pairings", pairings);
-            return new ModelAndView(model, "randomPairings.vtl");
+            model.put("template", "randomPairings.vtl");
+            return new ModelAndView(model, "layout.vtl");
         }, vte);
 
     }
