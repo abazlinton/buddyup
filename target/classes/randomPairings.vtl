@@ -1,0 +1,7 @@
+<h1>Your random student pairings are - </h1>
+
+#foreach ($pairing in $pairings)
+
+    <h5>$pairing.getStudents().get(0).getName() + $pairing.getStudents().get(1).getName()</h5>
+
+#end
