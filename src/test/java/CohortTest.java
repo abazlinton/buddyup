@@ -61,7 +61,8 @@ public class CohortTest {
         cohort.addStudent(emil);
         ArrayList<Pairing> pairs = (ArrayList) cohort.getPairs();
         assertEquals(2, pairs.size());
-
+        assertEquals(2, pairs.get(0).getStudents().size());
+        assertEquals(2, pairs.get(1).getStudents().size());
     }
 
 

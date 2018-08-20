@@ -42,25 +42,17 @@ public class Cohort {
         return pair;
     }
 
-//    public List<Pairing> getPairs(){
-//        ArrayList<Pairing> pairs = new ArrayList<>();
-//        int timesToLoop = this.students.size() / 2;
-//        for (int i = 0; i < timesToLoop; i++) {
-//            pairs.add(new Pairing(getPair()));
-//            this.students.remove(0);
-//            this.students.remove(0);
-//        }
-//        return pairs;
-//    }
-
     public List<Pairing> getPairs(){
+        Collections.shuffle(this.students);
         ArrayList<Pairing> pairs = new ArrayList<>();
-        int timesToLoop = this.students.size();
-        for (int i = 0; i < timesToLoop; i += 2) {
-            ArrayList<Student> pair = new ArrayList<>();
-            pair.add(this.students.get(i));
-            pair.add(this.students.get(i + 1));
-            pairs.add(new Pairing(pair));
+        int noOfStudents = this.students.size();
+        for ( int i = 0; i < noOfStudents; i += 2 ) {
+            ArrayList<Student> pairOfStudents = new ArrayList<>(2);
+            // 0, 2, 4...
+            pairOfStudents.add(this.students.get(i));
+            // 1, 3, 5...
+            pairOfStudents.add(this.students.get(i + 1));
+            pairs.add(new Pairing(pairOfStudents));
         }
         return pairs;
     }

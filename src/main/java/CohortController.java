@@ -19,10 +19,11 @@ public class CohortController {
     public static void main(String[] args) {
 
         VelocityTemplateEngine vte = new VelocityTemplateEngine();
+        CohortController.makeCohort();
+
 
 
         get("/random", (req, res) -> {
-            CohortController.makeCohort();
             String studentName = cohort.getRandomStudent().getName();
             Map<String, Object> model = new HashMap<>();
             model.put("studentName", studentName);
@@ -30,7 +31,6 @@ public class CohortController {
         }, vte);
 
         get("/pair", (req, res) -> {
-            CohortController.makeCohort();
             List<Student> students = cohort.getPair();
             Map<String, Object> model = new HashMap<>();
             model.put("students", students);
@@ -38,7 +38,6 @@ public class CohortController {
         }, vte);
 
         get("/pairs", (req, res) -> {
-            CohortController.makeCohort();
             List<Pairing> pairings = cohort.getPairs();
             Map<String, Object> model = new HashMap<>();
             model.put("pairings", pairings);
